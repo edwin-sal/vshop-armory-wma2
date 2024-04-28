@@ -5,48 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vshop</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/icons/" type="image/svg+xml">
   </head>
   <body>
     <header>
+      <a href="">
+        <img src="./images/icons/logo.svg" alt="vshop logo" width="70" />
+      </a>
       <nav>
-        <img src="./images/icons/alert-octagon.svg" alt="" />
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Shop</a></li>
           <li><a href="">Help</a></li>
+          <li>
+            <a href=""
+              ><img src="images/icons/cart.svg" alt="Logo" width="30"
+            /></a>
+          </li>
         </ul>
-        <input
-          type="button"
-          value="
-        Your Cart"
-        />
       </nav>
     </header>
     <main>
       <section id="product">
-        <div class="prod-img">
+        <div class="prod-img" id="main-bg">
           <img
-            id="main-img"
-            src="./images/placeholder.jpg"
-            alt="img-placeholder"
-            width="500"
-            height="500"
-          />
-          <img
-            src="./images/placeholder.jpg"
+            class="sub-img"
+            id="baril1"
+            src="./images/products/m16-1.png"
             alt="img-placeholder"
             width="150"
             height="150"
           />
           <img
-            src="./images/placeholder.jpg"
+            class="sub-img"
+            id="baril2"
+            src="./images/products/m16-2.png"
             alt="img-placeholder"
             width="150"
             height="150"
           />
           <img
-            src="./images/placeholder.jpg"
+            class="sub-img"
+            id="baril3"
+            src="./images/products/m16-3.png"
             alt="img-placeholder"
             width="150"
             height="150"
@@ -59,34 +61,34 @@
               <img
                 src="./images/icons/star-fill.svg"
                 alt="star"
-                width="15"
-                height="15"
+                width="20"
+                height="20"
               />
               <img
                 src="./images/icons/star-fill.svg"
                 alt="star"
-                width="15"
-                height="15"
+                width="20"
+                height="20"
               />
               <img
                 src="./images/icons/star-fill.svg"
                 alt="star"
-                width="15"
-                height="15"
+                width="20"
+                height="20"
               />
               <img
                 src="./images/icons/star-empty.svg"
                 alt="star"
-                width="15"
-                height="15"
+                width="20"
+                height="20"
               />
               <img
                 src="./images/icons/star-empty.svg"
                 alt="star"
-                width="15"
-                height="15"
+                width="20"
+                height="20"
               />
-              <p>5 Reviews</p>
+              <p>2 Reviews</p>
             </div>
           </div>
           <div class="spec">
@@ -120,127 +122,183 @@
               comfortable handling. Elevate your shooting experience with this
               reliable and customizable rifle.
             </p>
-            <input type="button" value="Add To Cart">
+            <button>Add To Cart</button>
           </div>
         </div>
       </section>
+
       <section id="recommendation">
         <h2>Similar Products</h2>
         <div class="recommend-products">
           <div class="prod-cards">
             <div class="card">
-              <img src="./images/placeholder.jpg" alt="recommended product" width="150" height="150">
-              <p>S&W M&P15-22 SPORT</p>
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-empty.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-empty.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-empty.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
+              <a href="">
+                <img
+                  src="./images/products/15-22.png"
+                  alt="recommended product"
+                  width="150"
+                  height="150"
+                />
+              </a>
+              <div class="card-info">
+                <p><a href="">S&W M&P15-22 SPORT</a></p>
+                <div class="star">
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-empty.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-empty.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-empty.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <p class="price">₱67,500.00</p>
+              </div>
             </div>
             <div class="card">
-              <img src="./images/placeholder.jpg" alt="recommended product" width="150" height="150">
-              <p>SIG SAUER 716 G2 PATROL</p>
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
+              <a href="">
+                <img
+                  src="./images/products/sig-sauer.png"
+                  alt="recommended product"
+                  width="150"
+                  height="150"
+                />
+              </a>
+              <div class="card-info">
+                <p><a href="">SIG SAUER 716 G2 PATROL</a></p>
+                <div class="star">
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <p class="price">₱322,500.00</p>
+              </div>
             </div>
             <div class="card">
-              <img src="./images/placeholder.jpg" alt="recommended product" width="150" height="150">
-              <p>S&W M&P15-22 SPORT</p>
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-fill.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-half.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
-              <img
-                src="./images/icons/star-empty.svg"
-                alt="star"
-                width="15"
-                height="15"
-              />
+              <a href="">
+                <img
+                  src="./images/products/ak47.png"
+                  alt="recommended product"
+                  width="150"
+                  height="150"
+                />
+              </a>
+              <div class="card-info">
+                <p><a href="">M&P AK47 - CRIMSON TRACE</a></p>
+                <div class="star">
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-fill.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-half.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./images/icons/star-empty.svg"
+                    alt="star"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <p class="price">₱50,750.00</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section id="reviews">
-        <h2>Reviews</h2>
+        <h2>Reviews (2)</h2>
         <div class="prod-review">
-          <div class="customer-info">
-            <img src="./images/icons/account-icon.svg" alt="account profile icon" width="50" height="50">
-            <h3>Aldous Macapagal</h3>
-            <p>January 16, 2019</p>
-            <img
+          <div class="customer">
+            <a
+              href="https://www.youtube.com/watch?v=g9w4OIzlT-c"
+              target="_blank"
+            >
+              <img
+                class="profile-icon"
+                src="./images/profilles/diwata.jpeg"
+                alt="account profile icon"
+                width="50"
+                height="50"
+              />
+            </a>
+            <div class="review-info">
+              <h3>
+                <a
+                  href="https://www.youtube.com/watch?v=g9w4OIzlT-c"
+                  target="_blank"
+                  >Diwata Pares Overload</a
+                >
+              </h3>
+              <p>January 16, 2019</p>
+              <img
                 src="./images/icons/star-fill.svg"
                 alt="star"
                 width="15"
@@ -270,17 +328,41 @@
                 width="15"
                 height="15"
               />
+            </div>
           </div>
           <p>
-            Okay naman 'to. Binili ko 'yung Rock Island Armory M16 5.56mm 16 na may fixed stock at flip-up iron sights. Hindi naman masyadong masama ang performance, pero medyo may mga isyu sa ibang parts. Kung hanap mo lang ng rifle na affordable at hindi sobrang demanding, pwede na 'to.
+            Okay naman 'to. Binili ko 'yung Rock Island Armory M16 5.56mm 16 na
+            may fixed stock at flip-up iron sights. Hindi naman masyadong masama
+            ang performance, pero medyo may mga isyu sa ibang parts. Kung hanap
+            mo lang ng rifle na affordable at hindi sobrang demanding, pwede na
+            'to.
           </p>
         </div>
         <div class="prod-review">
-          <div class="customer-info">
-            <img src="./images/icons/account-icon.svg" alt="account profile icon" width="50" height="50">
-            <h3>Gusion Estrada</h3>
-            <p>October 7, 2024</p>
-            <img
+          <div class="customer">
+            <a
+              href="https://www.youtube.com/watch?v=x8Loy36JY7s"
+              target="_blank"
+            >
+              <img
+                class="profile-icon"
+                src="./images/profilles/kai.jpg"
+                alt="account profile icon"
+                width="50"
+                height="50"
+              />
+            </a>
+
+            <div class="review-info">
+              <h3>
+                <a
+                  href="https://www.youtube.com/watch?v=x8Loy36JY7s"
+                  target="_blank"
+                  >Kai Sotto</a
+                >
+              </h3>
+              <p>October 7, 2024</p>
+              <img
                 src="./images/icons/star-fill.svg"
                 alt="star"
                 width="15"
@@ -310,23 +392,36 @@
                 width="15"
                 height="15"
               />
+            </div>
           </div>
           <p>
-            Ang tibay ng unit. 'Yung Rock Island Armory M16 5.56mm 16 na may fixed stock at optics-ready, sulit na sulit. Matibay 'yung pagkakagawa, hindi basta-basta. Tsaka 'yung optics, pwede ka magdagdag ng trip mo. Konti lang sana adjustments sa fixed stock para mas okay, pero overall, solid ang performance.
+            Galing talaga. 'Yung Rock Island Armory M16 5.56mm 16, sobrang ganda
+            ng performance. Ang collapsible stock, ang dali i-adjust depende sa
+            trip mo, tapos 'yung flip-up iron sights, ang linaw at ang bilis
+            gamitin. Sa range, solid ang accuracy at reliable talaga. Highly
+            recommended, bro!
           </p>
         </div>
       </section>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          <img
+            src="./images/icons/copyright-fill.svg"
+            alt="copyright icon"
+            width="24"
+          />
+          <h2>VShop Armory</h2>
+        </div>
+      </footer>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Help</a></li>
-        </ul>
-      </nav>
-      <h2>VShop Armory</h2>
-    </footer>
   </body>
+  <script src="./epeks.js"></script>
 </html>
