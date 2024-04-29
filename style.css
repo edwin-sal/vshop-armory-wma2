@@ -315,6 +315,11 @@ footer h2 {
 }
 
 @media (max-width: 600px) {
+  header {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
   header nav ul {
     flex-direction: column;
   }
@@ -376,7 +381,7 @@ footer h2 {
   }
 
   main {
-    width: 100%;
+    width: 90%;
     /* height: 100vh; */
   }
 
@@ -387,9 +392,11 @@ footer h2 {
 
   #main-bg {
     padding: 0;
+    /* margin: 10px; */
     margin-bottom: 0;
     background-size: cover;
     background-position: center;
+    justify-self: center;
   }
 
   .sub-img {
@@ -425,8 +432,8 @@ footer h2 {
   .card {
     flex-direction: column;
     /* align-items: center; */
-    width: 150px;
-    height: 220px;
+    width: 115px;
+    height: 215px;
     /* border: 1px solid #232f3e; */
     box-shadow: 0px 0px 2px #000000;
     /* padding: 10px; */
@@ -457,10 +464,15 @@ footer h2 {
   .card-info {
     font-size: 10px;
     padding: 0 5px;
-    white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
   }
+
+  /* .card-name a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
 
   .card-info .star img {
     width: 10px;
