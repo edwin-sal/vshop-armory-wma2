@@ -39,9 +39,10 @@ header nav ul {
   display: flex;
   list-style: none;
   align-items: center;
+  /* flex-direction: column; */
 }
 
-header nav ul li{
+header nav ul li {
   margin: 0 15px;
   transition: transform 0.2s;
 }
@@ -253,7 +254,7 @@ footer {
   background-color: white;
   margin: 20px 0;
   padding: 30px;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 /* section {
@@ -274,7 +275,7 @@ footer nav ul {
   margin-bottom: 20px;
 }
 
-footer nav ul li{
+footer nav ul li {
   margin: 0 15px;
   transition: transform 0.2s;
 }
@@ -290,7 +291,6 @@ footer a {
   font-weight: 400;
   text-align: center;
   font-size: 18px;
-  
 }
 
 .copyright {
@@ -306,13 +306,73 @@ footer h2 {
   color: #232f3e;
 }
 
+#sideskirt {
+  display: none;
+}
+
+#ekis {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+  }
+
+  #sideskirt {
+    display: block;
+    color: whitesmoke;
+  }
+
+  #ekis {
+    display: block;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #232f3e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 10;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
   section {
     /* background-color: white; */
   }
 
   body {
-    align-items:flex-start;
+    align-items: flex-start;
   }
 
   main {
@@ -322,13 +382,14 @@ footer h2 {
 
   #product {
     display: grid;
-    grid-template-rows: 1fr 1.2fr;
+    grid-template-rows: 1fr 2.2fr;
   }
 
   #main-bg {
     padding: 0;
     margin-bottom: 0;
     background-size: cover;
+    background-position: center;
   }
 
   .sub-img {

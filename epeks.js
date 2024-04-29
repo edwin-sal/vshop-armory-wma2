@@ -53,3 +53,11 @@ baril3.addEventListener("mouseout", function () {
   baril2.style.opacity = "100";
   baril3.style.opacity = "100";
 });
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

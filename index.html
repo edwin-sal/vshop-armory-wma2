@@ -13,18 +13,20 @@
         <img src="./images/icons/logo.svg" alt="vshop logo" width="70" />
       </a>
       <nav>
-        <ul>
+        <ul id="mySidenav" class="sidenav">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"  id="ekis">&times;</a></li>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Shop</a></li>
           <li><a href="">Help</a></li>
-          <li>
+          <li>  
             <a href=""
               ><img src="images/icons/cart.svg" alt="Logo" width="30"
             /></a>
           </li>
         </ul>
       </nav>
+      <span id="sideskirt" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> 
     </header>
     <main>
       <section id="product">
