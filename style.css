@@ -530,6 +530,7 @@ footer h2 {
   footer {
     margin: 0;
     padding: 20px;
+    margin-bottom: 20px;
   }
 
   footer ul li a {
